@@ -6,11 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(CanvasGroup))]
 public class AppController : MonoBehaviour
 {
-    public CanvasGroup _canvasGroup;
+    public CanvasGroup canvasGroup;
 
     private void Awake()
     {
-        _canvasGroup = GetComponent<CanvasGroup>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
 

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private KeyCode phoneToggle;
     [SerializeField] private KeyCode halfShowPhone;
-    [SerializeField] private KeyCode togglephoneCamera;
+    [SerializeField] private KeyCode togglePhoneCamera;
     [SerializeField] private KeyCode toggleWhatsApp;
     [SerializeField] private KeyCode takePicture;
     [SerializeField] private KeyCode togglePhotoGallery;
@@ -57,12 +57,17 @@ public class GameManager : MonoBehaviour
         if (scroll != 0f)
         {
             Debug.Log("scroll = " + scroll);
-            //_phoneController.DisplayImages();
+            //_phoneController.Scr
         }
-            
 
 
-        //public KeyCode phoneToggle;
+        //togglePhotoGallery
+        if (Input.GetKeyDown(togglePhotoGallery))
+        {
+            _phoneController.OpenPhotoGallery(_phoneController.currentApp != PhoneController.Apps.PhoneGallery);
+        }
+
+            //public KeyCode phoneToggle;
         if (Input.GetKeyDown(phoneToggle))
         {
             if (!_phoneController.phoneEnabled)
@@ -83,7 +88,7 @@ public class GameManager : MonoBehaviour
             
 
         // public KeyCode togglephoneCamera;
-        if (Input.GetKeyDown(togglephoneCamera))
+        if (Input.GetKeyDown(togglePhoneCamera))
         {
 
             _phoneController.ActivateCamera(_phoneController.currentApp != PhoneController.Apps.Camera);

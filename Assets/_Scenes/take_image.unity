@@ -340,8 +340,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1979752386797137576, guid: 4570629fe26f9604880a275f801399cc, type: 3}
+    - target: {fileID: 6419389232956300343, guid: 4570629fe26f9604880a275f801399cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419389232956300343, guid: 4570629fe26f9604880a275f801399cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357360299277046239, guid: 4570629fe26f9604880a275f801399cc,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357360299277046236, guid: 4570629fe26f9604880a275f801399cc,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274450559132777504, guid: 4570629fe26f9604880a275f801399cc,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4570629fe26f9604880a275f801399cc, type: 3}
 --- !u!1 &722349812
 GameObject:
@@ -872,10 +896,10 @@ MonoBehaviour:
   _phoneController: {fileID: 454571853}
   phoneToggle: 122
   halfShowPhone: 120
-  togglephoneCamera: 99
+  togglePhoneCamera: 99
   toggleWhatsApp: 0
   takePicture: 118
-  togglePhotoGallery: 0
+  togglePhotoGallery: 98
 --- !u!4 &2012257777
 Transform:
   m_ObjectHideFlags: 0
