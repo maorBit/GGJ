@@ -206,7 +206,7 @@ public class PhoneController : MonoBehaviour
     }
 
     int index = 0;
-    private void ScrollPhotoGallery(float scroll)
+    public void ScrollPhotoGallery(float scroll)
     {
         if (currentApp == Apps.PhoneGallery)
         {

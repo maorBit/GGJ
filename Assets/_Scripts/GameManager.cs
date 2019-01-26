@@ -56,8 +56,8 @@ public class GameManager : MonoBehaviour
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0f)
         {
-            Debug.Log("scroll = " + scroll);
-            //_phoneController.Scr
+            //Debug.Log("scroll = " + scroll);
+            _phoneController.ScrollPhotoGallery(scroll);
         }
 
 
